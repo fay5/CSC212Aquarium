@@ -15,21 +15,21 @@ public class Fish {
 }
 	
 	public void draw (Graphics2D window) {
-		DrawFish.facingRight(window, 
-				this.color, this.x, this.y);
+		
 		//BIG FISH 
 		
 		DrawFish.facingLeft(window,this.color, this.x, this.y);
-		// Draw the confused fish!
+		
 		DrawFish.facingRight(window, this.color, this.x, this.y);
 		
 		//SMALLER FISH
+		
 		DrawFish.smallFacingLeft(window,this.color, this.x, this.y);
-		// Draw the confused fish!
+		
 		DrawFish.smallFacingRight(window, this.color, this.x, this.y);
 	}
 	
 	public void swim() {
-		this.y +=1;
+		//this.y +=1;
 	}
 }
